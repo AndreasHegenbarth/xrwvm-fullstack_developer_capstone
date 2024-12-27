@@ -95,16 +95,16 @@ PASSWORD_VALIDATION = 'django.contrib.auth.password_validation.'
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        'NAME': PASSWORD_VALIDATION / 'UserAttributeSimilarityValidator',
+        'NAME': PASSWORD_VALIDATION + 'UserAttributeSimilarityValidator',
     },
     {
-        'NAME': PASSWORD_VALIDATION / 'MinimumLengthValidator',
+        'NAME': PASSWORD_VALIDATION + 'MinimumLengthValidator',
     },
     {
-        'NAME': PASSWORD_VALIDATION / 'CommonPasswordValidator',
+        'NAME': PASSWORD_VALIDATION + 'CommonPasswordValidator',
     },
     {
-        'NAME': PASSWORD_VALIDATION / 'NumericPasswordValidator',
+        'NAME': PASSWORD_VALIDATION + 'NumericPasswordValidator',
     },
 ]
 
